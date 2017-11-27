@@ -1,0 +1,30 @@
+api_recipe_save:
+    path: /api/recipes
+    defaults:
+        _controller: AppBundle:Default:saveRecipe
+        _format: json
+    methods:  [POST]
+api_recipe_get_all:
+    path: /api/recipes
+    defaults:
+        _controller: AppBundle:Default:showAllRecipes
+        _format: json
+    methods:  [GET]
+api_recipe_get:
+    path: /api/recipes/{id}
+    defaults:
+        _controller: AppBundle:Default:showRecipe
+        _format: json
+    methods:  [GET]
+api_recipe_update:
+    path: /api/recipes/{id}
+    defaults:
+        _controller: AppBundle:Default:updateRecipe
+        _format: json
+    methods:  [PATCH]
+api_recipe_rate:
+    path: /api/recipes/{id}/rating
+    defaults:
+        _controller: AppBundle:Default:rateRecipe
+        _format: json
+    methods:  [POST]
