@@ -11,13 +11,15 @@ The API offers following operations:
 API Routes
 -------------------
 
-####Fetch recipe by id
+#### Fetch recipe by id
+
 Send a `GET` request to:
 ```
 /api/recipes/[id]
 ```
 
-####Fetch all recipes for a specific cuisine
+#### Fetch all recipes for a specific cuisine
+
 Send a `GET` request to:
 ```
 /api/recipes?cuisine=[cuisine]
@@ -26,11 +28,3 @@ Send a `GET` request to:
 Add pagination parameters if needed:
 * limit (default = 5)
 * offset (default = 0)
-
-
-   
-
-
-
-
-
