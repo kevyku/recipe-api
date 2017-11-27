@@ -2,9 +2,7 @@
 
 namespace AppBundle\Controller;
 
-use AppBundle\Entity\Rating;
 use AppBundle\Entity\Recipe;
-use AppBundle\Form\RecipeType;
 use FOS\RestBundle\Controller\FOSRestController;
 
 use Symfony\Component\HttpFoundation\Request;

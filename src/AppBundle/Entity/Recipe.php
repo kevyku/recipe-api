@@ -2,8 +2,7 @@
 
 namespace AppBundle\Entity;
 
-use Symfony\Component\Validator\Constraints as Assert;
-use AppBundle\Entity\Rating;
+use Symfony\Component\Validator\Constraints as Assert;;
 
 class Recipe
 {
@@ -65,8 +64,6 @@ class Recipe
     private $in_your_box;
 
     private $gousto_reference;
-
-    private $ratings;
 
     /**
      * Recipe constructor.
@@ -495,15 +492,9 @@ class Recipe
         $this->gousto_reference = $gousto_reference;
     }
 
-    public function rate(Rating $rating)
-    {
-        $this->ratings[] = $rating;
-    }
-
     public function toArray()
     {
         $array = get_object_vars($this);
-        unset($array['ratings']);
         return $array;
     }
 
