@@ -8,6 +8,16 @@ The API offers following operations:
 - Fetch a recipe by id
 - Fetch all recipes for a specific cuisine (with pagination)
 
+Test API
+-------------------
+
+After installing all composer components, you can test the application on Symfony's built-in webserver.
+
+```
+php bin/console server:start
+```
+
+
 API Routes
 -------------------
 
